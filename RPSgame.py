@@ -44,7 +44,7 @@ def rps_game():
   if result == "You win!!!!":
    player_wins += 1
 
-  elif result == "You lose!":
+  elif result == "You lose!!!!":
    opponent_wins += 1
 
   else:
