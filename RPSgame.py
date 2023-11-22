@@ -11,7 +11,7 @@ def player_choice():
   if player_input == "quit":
    return "quit"
   
-  if player_input in choice_maps:
+  elif player_input in choice_maps:
     return choice_maps[player_input]
   
   if player_input in valid_choices:
