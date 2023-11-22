@@ -1,5 +1,5 @@
 import random
-#testing the pull request
+
 def player_choice():
  
  choice_maps = {"r": "rock", "p": "paper", "s": "scissors", "sci": "scissors", "pa": "paper", "ro": "rock"}
@@ -14,7 +14,7 @@ def player_choice():
   if player_input in choice_maps:
     return choice_maps[player_input]
   
-  elif player_input in valid_choices:
+  if player_input in valid_choices:
     return player_input
   
   else:
