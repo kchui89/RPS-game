@@ -1,9 +1,25 @@
 import random
 #testing the pull request
 def player_choice():
- player_input = input("Enter your choice (rock, paper, scissors), or 'quit' to exit: ").lower()
- return player_input
+ 
+ choice_maps = {"r": "rock", "p": "paper", "s": "scissors", "sci": "scissors", "pa": "paper", "ro": "rock"}
+ valid_choices = set(choice_maps.values())
 
+ while True:
+  player_input = input("Enter your choice (rock, paper, scissors), or 'quit' to exit: ").lower()
+  
+  if player_input == "quit":
+   return "quit"
+  
+  if player_input in choice_maps:
+    return choice_maps[player_input]
+  
+  elif player_input in valid_choices:
+    return player_input
+  
+  else:
+   print("Invalid input. Please enter rock/r/ro for 'rock', scissors/s/sci for 'scissors' or paper/p/pa for 'paper' ")
+  
 def opponent_choice():
  choices = ["rock", "paper", "scissors"]
  return random.choice(choices)
