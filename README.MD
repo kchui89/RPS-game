@@ -12,3 +12,4 @@ python RPSgame.py
 ```
 
 Be sure to read the ingame instructions!
+You can quit at any type by typing 'quit'
